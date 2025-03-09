@@ -1,0 +1,116 @@
+/* Establece la fuente para todos los elementos */
+* {
+    font-family: Arial, Helvetica, sans-serif;
+}
+
+/* Elimina los márgenes y los rellenos predeterminados del body */
+body {
+    margin: 0;
+    padding: 0;
+    background-color: #f8f8f8;
+}
+.menu {
+    background-color: #f0f0f0;
+    padding: 15px;
+    text-align: left;
+}
+.menu ul {
+    list-style: none;
+    padding: 0;
+    margin: 0;
+    display: flex;
+    justify-content: left;
+}
+.menu li {
+    margin: 0 15px;
+}
+
+.menu a {
+    text-decoration:none;
+    color:black;
+    font-weight: bold;
+}
+
+.menu .active{
+    color: #8bc34a;
+    border-bottom: 2px solid #8bc34a;
+}
+
+
+/* ----------- Estilos para el contenedor general y el aside -------------- */
+
+/* Establece un contenedor con propiedades de Flexbox */
+.container {
+    display: flex;
+    max-width: 1200px;
+    margin: 20px auto;
+    background: white;
+    box-shadow: 0px 0px 10px rgba(0,0,0,0.1);
+}
+
+
+/* Define un aside con un ancho del 60% para la imagen*/
+aside {
+    position: relative;
+    width: 60%;
+}
+
+/* Hace que las imágenes dentro del aside ocupen todo el ancho y alto del contenedor */
+aside img {
+    width: 500px;
+    height: 100%;
+}
+
+/* Estilo para un contenedor de informaciòn dentro del aside */
+aside .aside-info {
+    position: absolute;
+    bottom: 20px;
+    left: 20px;
+    color: #004d00;
+}
+
+/* Estilo para los títulos h4 dentro del aside */
+aside .aside-info h2 {
+    font-size: 24px;
+    margin: 0 0 20px 0;
+    font-style: italic;
+    /* Margen inferior de 20px */
+}
+
+/* Estilo para lo elementos span dentro del aside */
+aside .aside-info span {
+    color: #004d00;
+    font-weight: bold;
+}
+
+.general-wrapper {
+    background: #f0f0f0;
+    padding: 15px;
+    border-left: 3px solid #8bc34a;
+    margin-bottom: 20px;
+}
+
+.highlight {
+    color: #8bc34a;
+    font-style: italic;
+}
+
+.general-wrapper flex-wrap{
+    background: #f0f0f0;
+    padding: 15px;
+    margin-top: 20px;
+}
+
+.personal-data-component {
+    display: flex;
+    justify-content: space-between;
+    margin-bottom: 5px;
+
+}
+
+.buttons-wrapper {
+    background: white;
+    padding: 8px 15px;
+    margin-left: 25px;
+    cursor: pointer;
+}
